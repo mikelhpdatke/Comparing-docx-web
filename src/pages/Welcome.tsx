@@ -86,13 +86,13 @@ export default (): React.ReactNode => {
               </Col>
               <Form.Item wrapperCol={{ span: 12, offset: 6 }}>
                 <Button type="primary" htmlType="submit">
-                  Submit
+                  Bắt đầu chấm
                 </Button>
               </Form.Item>
             </Row>
           </Form>
         </Card>
-        <Divider orientation="left">Kết quả</Divider>
+        <Divider orientation="left">Kết quả chấm</Divider>
         <div ref={dividerElementRef} />
         <Table
           columns={[

@@ -4,6 +4,7 @@ import { PageContainer } from '@ant-design/pro-layout';
 import { Button, Card, Divider, Form, Spin, Row, Col, Upload, List, Table, message } from 'antd';
 import React, { useEffect, useRef, useState } from 'react';
 import request from 'umi-request';
+import CustomUpload from '@/components/Upload/Upload';
 const formItemLayout = {
   labelCol: { span: 6 },
   wrapperCol: { span: 14 },
@@ -66,15 +67,7 @@ export default (): React.ReactNode => {
                     noStyle
                     rules={[{ required: true, message: 'Hãy tải lên các tập tin' }]}
                   >
-                    <Upload.Dragger name="files" multiple>
-                      <p className="ant-upload-drag-icon">
-                        <InboxOutlined />
-                      </p>
-                      <p className="ant-upload-text">
-                        Chọn hoặc kéo thả tập tin vào đây để tải lên
-                      </p>
-                      <p className="ant-upload-hint">Hỗ trợ tải nhiều tập tin.</p>
-                    </Upload.Dragger>
+                    <CustomUpload multiple={true} />
                   </Form.Item>
                 </Form.Item>
               </Col>
@@ -87,15 +80,7 @@ export default (): React.ReactNode => {
                     getValueFromEvent={normFile}
                     noStyle
                   >
-                    <Upload.Dragger name="files" multiple={false}>
-                      <p className="ant-upload-drag-icon">
-                        <InboxOutlined />
-                      </p>
-                      <p className="ant-upload-text">
-                        Chọn hoặc kéo thả 1 tập tin vào đây để tải lên
-                      </p>
-                      {/* <p className="ant-upload-hint">Hỗ trợ tải nhiều tập tin.</p> */}
-                    </Upload.Dragger>
+                    <CustomUpload />
                   </Form.Item>
                 </Form.Item>
               </Col>

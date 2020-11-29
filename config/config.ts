@@ -13,7 +13,7 @@ export default defineConfig({
     hmr: true,
   },
   layout: {
-    name: 'Ant Design Pro',
+    name: 'Chấm thi C500',
     locale: true,
     siderWidth: 208,
     ...defaultSettings,

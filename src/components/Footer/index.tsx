@@ -8,8 +8,8 @@ export default () => (
     links={
       [
         // {
-        //   key: 'Ant Design Pro',
-        //   title: 'Ant Design Pro',
+        //   key: 'Chấm thi C500',
+        //   title: 'Chấm thi C500',
         //   href: 'https://pro.ant.design',
         //   blankTarget: true,
         // },
